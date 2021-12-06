@@ -10,6 +10,7 @@ namespace Dungeon_Roll_Project
     {
         public List<PartyMembers> Faces = PartyMembers.PartyMemberList();
         public PartyMembers FaceUp { get; set; }
+        public int Index { get; set; }
 
         static public List<PartyDice> GetPartyDice()
         {

@@ -6,9 +6,7 @@ namespace Dungeon_Roll_Project
     {
         static void Main(string[] args)
         {
-          
-            Console.WindowHeight = 25;
-            Console.WindowWidth = 150;
+            
             GameFlow.StartingGame();
 
         }

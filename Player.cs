@@ -12,7 +12,8 @@ namespace Dungeon_Roll_Project
         public int Exp { get; set; }
         public List<Object> Inventory { get; set; }
         public List<PartyDice> PartyDice { get; set; }
-        private static Random rng = new Random();
+        private static Random rng = new Random();     
+        public bool PartyDiceThrown { get; set; }
 
         public Player(string name)
         {

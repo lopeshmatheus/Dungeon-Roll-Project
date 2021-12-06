@@ -11,26 +11,10 @@ namespace Dungeon_Roll_Project
         static public void StartingGame()
         {
             
-            GameMenu.MainMenu();
+            GameMenu.FirstScreen();
             Console.ReadLine();
             Game.SetPlayerList();
-            Game.GameStarting();
-            //int userInput = int.Parse(Console.ReadLine());
-
-            //if (userInput == 1)
-            //{
-                
-
-            //}
-            //else if (userInput == 2)
-            //{
-
-            //}
-            //else if (userInput == 3)
-            //{
-
-            //}
-
+            GameMenu.MainMenu();
 
         }
     }

@@ -9,10 +9,10 @@ namespace Dungeon_Roll_Project
     class PartyMembers
     {
         public string Name { get; set; }
-        public string Color { get; set; }
+        public ConsoleColor Color{get; set; }
         public string Special { get; set; }
 
-        public PartyMembers(string name, string color, string special)
+        public PartyMembers(string name, ConsoleColor color, string special)
         {
             Name = name;
             Color = color;
@@ -21,12 +21,12 @@ namespace Dungeon_Roll_Project
 
         static public List<PartyMembers> PartyMemberList()
         {
-            var champion = new PartyMembers("Champion", "yellow", "everyone");
-            var cleric = new PartyMembers("Cleric", "white", "skeleton");
-            var mage = new PartyMembers("Mage", "blue", "ooze");
-            var thief = new PartyMembers("Thief", "purple", "chest");
-            var scroll = new PartyMembers("Scroll", "orange", "reroll");
-            var warrior = new PartyMembers("Warrior", "green", "goblin");
+            var champion = new PartyMembers("Champ", ConsoleColor.Yellow, "everyone");
+            var cleric = new PartyMembers("Cleric", ConsoleColor.White, "skeleton");
+            var mage = new PartyMembers("Mage", ConsoleColor.Blue, "ooze");
+            var thief = new PartyMembers("Thief", ConsoleColor.DarkMagenta, "chest");
+            var scroll = new PartyMembers("Scroll", ConsoleColor.DarkYellow, "reroll");
+            var warrior = new PartyMembers("Warrior", ConsoleColor.Green, "goblin");
 
             List<PartyMembers> partyMemberList = new List<PartyMembers> { champion, cleric, mage, thief, scroll, warrior};
 
